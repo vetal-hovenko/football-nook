@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import TeamRecord from './TeamRecord';
-import TeamItem from './TeamItem';
+import TeamRecord from "./TeamRecord";
+import TeamItem from "./TeamItem";
 
-import { Standings } from '@/types/LeagueByIdResponse';
+import { Standings } from "@/types/LeagueByIdResponse";
 
 type TableItemProps = {
     teamFromAPI: Standings
@@ -16,7 +16,7 @@ const TableItem: React.FC<TableItemProps> = ({ teamFromAPI }) => {
     const { for: goalsScored, against: goalsConceded } = goals;
     let r: string[] = [];
     if (form !== null) {
-        r = form.split('');
+        r = form.split("");
     }
     return (
         <tr key={id}>

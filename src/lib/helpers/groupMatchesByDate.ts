@@ -1,5 +1,5 @@
-import { Match } from '@/types/FixtureResponse';
-import { formatDate } from './formatDate';
+import { Match } from "@/types/FixtureResponse";
+import { formatDate } from "./formatDate";
 
 export function groupMatchesByDate (matches: Match[]) {
     const grouped = new Map();

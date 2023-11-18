@@ -1,5 +1,5 @@
 import { FixtureResponse, Match } from "@/types/FixtureResponse";
-import { getRequestOptions } from './getOptions';
+import { getRequestOptions } from "./getOptions";
 
 export async function fetchHeadToHead(
     idOfFirst: number,
@@ -15,7 +15,7 @@ export async function fetchHeadToHead(
 
         return [...result.response].sort((match1, match2) =>
             match2.fixture.date.localeCompare(match1.fixture.date)
-        ).slice(2, 7);
+        ).slice(1, 6);
     } catch (error) {
         throw new Error(
             "Unexpected error: failed to fetch head to head matches"

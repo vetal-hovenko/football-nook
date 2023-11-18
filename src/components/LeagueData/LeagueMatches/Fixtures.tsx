@@ -4,7 +4,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 
 import Loader from "../../Ui/Loader/Loader";
-import FixturesNavBar from './FixturesNavBar';
+import FixturesNavBar from "./FixturesNavBar";
 import MatchesList from "./MatchesList";
 
 import { useSetNewParams } from "@/lib/hooks/useSetNewParams";

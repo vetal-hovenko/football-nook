@@ -1,5 +1,5 @@
 import { ClubResponse } from "@/types/ClubResponse";
-import { getRequestOptions } from './getOptions';
+import { getRequestOptions } from "./getOptions";
 
 export async function fetchClub(id: string): Promise<ClubResponse> {
     const url = `https://api-football-v1.p.rapidapi.com/v3/teams?id=${id}`;

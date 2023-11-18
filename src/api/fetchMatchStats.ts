@@ -1,5 +1,5 @@
 import { MatchStatsResponse, TeamStats } from "@/types/MatchStats";
-import { getRequestOptions } from './getOptions';
+import { getRequestOptions } from "./getOptions";
 
 export async function fetchMatchStats(id: number): Promise<[TeamStats, TeamStats]> {
     const url =

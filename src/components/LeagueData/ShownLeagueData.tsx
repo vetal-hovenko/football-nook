@@ -9,7 +9,7 @@ import ScorersList from "./LeagueScorers/ScorersList";
 import Table from "./LeagueTable/Table";
 
 import { fetchFixturesByLeagueId } from "@/api/fetchFixturesById";
-import { fetchStandingsById } from '@/api/fetchStandingsById';
+import { fetchStandingsById } from "@/api/fetchStandingsById";
 import { fetchScorers } from "@/api/fetchScorers";
 
 

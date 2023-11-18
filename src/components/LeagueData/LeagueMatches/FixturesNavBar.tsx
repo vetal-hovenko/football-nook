@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 import {
     IoIosArrowDropleft as ArrowLeft,
     IoIosArrowDropright as ArrowRight,
 } from "react-icons/io";
 
-import { ALL_MONTHS } from '@/lib/helpers/Constants';
+import { ALL_MONTHS } from "@/lib/helpers/Constants";
 
 type FixturesNavBarProps = {
     currentDate: Date,
@@ -44,20 +44,20 @@ const FixturesNavBar: React.FC<FixturesNavBarProps> = ({currentDate, setCurrentD
     } ${currentDate.getFullYear()}`;
 
     return (
-        <nav className='flex justify-center mb-2 gap-2 text-xl text-white'>
+        <nav className="flex justify-center mb-2 gap-2 text-xl text-white">
             <button
                 disabled={currentMonth === firstMonth}
-                className='disabled:text-gray-400'
+                className="disabled:text-gray-400"
                 onClick={() => goToPreviousMonth()}
             >
                 <ArrowLeft />
             </button>
-            <h2 className='w-48 text-center font-semibold text-base md:text-xl'>
+            <h2 className="w-48 text-center font-semibold text-base md:text-xl">
                 {month}
             </h2>
             <button
                 disabled={currentMonth === lastMonth}
-                className='disabled:text-gray-400'
+                className="disabled:text-gray-400"
                 onClick={() => goToNextMonth()}
             >
                 <ArrowRight />

@@ -1,5 +1,5 @@
 import { FixtureResponse, Match } from "@/types/FixtureResponse";
-import { getRequestOptions } from './getOptions';
+import { getRequestOptions } from "./getOptions";
 
 export async function fetchLastMatchesByTeam(id: string, season: number): Promise<Match[]> {
     const url =

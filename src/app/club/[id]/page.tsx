@@ -10,6 +10,7 @@ import { fetchClub } from "@/api/fetchClub";
 import { fetchLastMatchesByTeam } from "@/api/fetchLastMatchesByTeam";
 
 import { SearchParams } from "@/types/SearchParams";
+import ClubInfo from "@/components/ClubInfo/ClubInfo";
 
 const ClubPage = async ({ params }: { params: SearchParams }) => {
     const id = params.id;
@@ -32,6 +33,7 @@ const ClubPage = async ({ params }: { params: SearchParams }) => {
                                 alt="club"
                                 src={club.logo}
                                 quality={100}
+                                priority={true}
                             />
                             <h1 className="text-2xl md:text-4xl font-semibold uppercase tracking-wide">
                                 {club.name}
@@ -41,34 +43,8 @@ const ClubPage = async ({ params }: { params: SearchParams }) => {
                         <h2 className="text-xl md:text-2xl font-semibold mt-10 mb-2">
                             Stadium
                         </h2>
-                        <article className="flex mb-4 md:mb-0 flex-col md:flex-row gap-4 text-white">
-                            <Image
-                                height="400"
-                                width="400"
-                                alt={`${club.name} stadium`}
-                                src={stadium.image}
-                                quality={100}
-                            />
-                            <div className="flex flex-col gap-1">
-                                <p className="text-lg font-semibold">
-                                    {stadium.name}
-                                </p>
-                                <p>
-                                    Address:&nbsp;
-                                    <a
-                                        target="_blank"
-                                        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                                            `${stadium.address}, ${stadium.city}`
-                                        )}`}
-                                        className="text-base text-blue-300 hover:text-gold-title"
-                                    >
-                                        {stadium.address}, {stadium.city}
-                                    </a>
-                                </p>
-                                <p className="text-base">
-                                    Capacity: {stadium.capacity}
-                                </p>
-                            </div>
+                        <article className="flex w-72 md:w-3/4 mb-4 justify-center items-center md:mb-0 flex-col md:flex-row gap-4 text-white">
+                            <ClubInfo club={club} stadium={stadium} />
                         </article>
                     </section>
 

@@ -2,7 +2,7 @@ import React from "react";
 
 import CountriesList from "@/components/Countries/CountriesList";
 import { HomePageHeader } from "@/components/Ui/HomePageHeader";
-import TeamSearch from '@/components/TeamSearch/TeamSearch';
+import TeamSearch from "@/components/TeamSearch/TeamSearch";
 import { Container } from "@/components/Ui/Container";
 import { fetchCountries } from "@/api/fetchCountries";
 
@@ -23,7 +23,7 @@ export default async function Home() {
                 <h2 className={subtitleStyles}>Countries List</h2>
                 <section className="w-full md:w-5/6 mx-auto ">
                     <Container>
-                        <div className='bg-[#808080a2] p-2 rounded-md '>
+                        <div className="bg-[#808080a2] p-2 rounded-md ">
                             <CountriesList countries={countries}/>
                         </div>
                     </Container>

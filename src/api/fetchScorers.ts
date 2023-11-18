@@ -1,5 +1,5 @@
 import { GoalScorerResponse } from "@/types/Player";
-import { getRequestOptions } from './getOptions';
+import { getRequestOptions } from "./getOptions";
 
 export async function fetchScorers(id: number, season: number): Promise<GoalScorerResponse> {
     const url =

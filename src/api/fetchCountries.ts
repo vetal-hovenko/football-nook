@@ -1,5 +1,5 @@
 import { CountryFetch } from "@/types/CountryFetch";
-import { getRequestOptions } from './getOptions';
+import { getRequestOptions } from "./getOptions";
 
 export async function fetchCountries(): Promise<CountryFetch> {
     const url = "https://api-football-v1.p.rapidapi.com/v3/countries";

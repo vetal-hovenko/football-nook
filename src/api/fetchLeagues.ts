@@ -1,5 +1,5 @@
 import { LeagueResponse } from "@/types/LeagueByIdResponse";
-import { getRequestOptions } from './getOptions';
+import { getRequestOptions } from "./getOptions";
 
 export async function fetchLeagues(country: string) {
     const url = `https://api-football-v1.p.rapidapi.com/v3/leagues?country=${country}`;

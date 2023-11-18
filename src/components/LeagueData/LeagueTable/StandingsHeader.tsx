@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import { Container } from "../../Ui/Container";
 
-import { fetchStandingsById } from '@/api/fetchStandingsById';
+import { fetchStandingsById } from "@/api/fetchStandingsById";
 
 import { League } from "@/types/LeagueByIdResponse";
 

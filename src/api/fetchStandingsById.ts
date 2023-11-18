@@ -1,5 +1,5 @@
-import { LeagueResponse } from '@/types/LeagueByIdResponse';
-import { getRequestOptions } from './getOptions';
+import { LeagueResponse } from "@/types/LeagueByIdResponse";
+import { getRequestOptions } from "./getOptions";
 
 export async function fetchStandingsById(
     id: number,

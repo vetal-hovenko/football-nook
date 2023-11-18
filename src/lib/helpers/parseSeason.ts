@@ -9,7 +9,7 @@ export const parseSeason = (searchParams: ReadonlyURLSearchParams) => {
         parsedMonth = today.getMonth() + 1;
     }
 
-    if (+parsedMonth >= 1 && +parsedMonth <= 8) {
+    if (+parsedMonth >= 1 && +parsedMonth < 8) {
         parsedSeason = +parsedSeason + 1;
     }
 

@@ -1,16 +1,15 @@
-import { fetchCountries } from "@/api/fetchCountries";
-import CountriesList from "@/components/Countries/CountriesList";
-import Link from "next/link";
 import React from "react";
-import { TbHome } from "react-icons/tb";
+
 import CountiesWrapper from "./CountiesWrapper";
 import { Container } from "../Container";
+
+import { fetchCountries } from "@/api/fetchCountries";
 
 const NavBar = async () => {
     const countries = await fetchCountries();
 
     return (
-        <header className="text-white absolute top-0 w-full">
+        <header className="text-white absolute top-0 w-full z-50">
             <Container>
                 <nav className="flex gap-4 pt-4">
                     <div>

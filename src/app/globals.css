@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body {
+    min-width: 300px;
+}
 main {
     min-height: 100vh;
 }
@@ -18,6 +20,10 @@ td, th{
     min-width: 50px;
     color: white;
     padding: 4px;
+}
+
+img {
+    position: unset !important;
 }
 
 tr {

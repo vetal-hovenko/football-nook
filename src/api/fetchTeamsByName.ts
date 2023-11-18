@@ -1,5 +1,5 @@
-import { ClubData } from '@/types/ClubResponse';
-import { getRequestOptions } from './getOptions';
+import { ClubData } from "@/types/ClubResponse";
+import { getRequestOptions } from "./getOptions";
 
 export async function fetchTeamsByName(name: string): Promise<ClubData[]> {
     const url =

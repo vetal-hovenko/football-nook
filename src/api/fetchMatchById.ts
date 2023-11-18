@@ -1,5 +1,5 @@
 import { FixtureResponse, Match } from "@/types/FixtureResponse";
-import { getRequestOptions } from './getOptions';
+import { getRequestOptions } from "./getOptions";
 
 export async function fetchMatchById(id: number): Promise<Match[]> {
     const url = `https://api-football-v1.p.rapidapi.com/v3/fixtures?id=${id}`;
