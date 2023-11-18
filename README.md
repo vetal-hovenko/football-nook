@@ -1,6 +1,6 @@
 # Football Nook
 
-[![Football Nook](https://drive.google.com/uc?export=view&id=1bSGj8wIe2cuXMvustIUfYj0iIZF9-zpt)](https://football-nook.vercel.app/)
+[![Football Nook](https://drive.google.com/uc?export=view&id=1bSGj8wIe2cuXMvustIUfYj0iIZF9-zpt)](https://football-nook.vercel.app/ "Click to visit Football Nook")
 
 ## Overview
 
