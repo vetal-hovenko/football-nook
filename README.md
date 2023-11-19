@@ -4,7 +4,7 @@
 
 ## Overview
 
-> This repository contains the codebase for a detailed football league information website built with Next.js. Users can view the league > table, top scorers, match details, match statistics and club information over multiple seasons.
+> This repository contains the codebase for a detailed football league information website built with Next.js. Users can view the league table, top scorers, match details, match statistics and club information over multiple seasons.
 
 ## Features
 
