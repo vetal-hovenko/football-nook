@@ -35,7 +35,7 @@ const CountryItem = ({ name, flag }: CountryInfo) => {
     };
 
     return (
-        <li className="mb-2 shadow-lg w-full bg-gray-600">
+        <li className="mb-2 shadow-lg w-full misted-glass">
             <CountryButton 
                 name={name}
                 flag={flag}

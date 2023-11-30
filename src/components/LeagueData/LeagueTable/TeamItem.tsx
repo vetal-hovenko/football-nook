@@ -16,7 +16,7 @@ const TeamItem: React.FC<TeamItemProps> = ({ id, logo, name }) => {
             href={`/club/${id}`}
             className="flex items-center gap-2 pl-2 md:gap-4 w-40 md:w-52"
         >
-            <Image width={20} height={20} src={logo} alt={`${name} logo`} />
+            <Image width={20} height={20} src={logo} alt={`${name} logo`} priority={true} />
             <p className="hover:text-yellow-300 hover:scale-105" title={name}>
                 {nameFormatter(name)}
             </p>

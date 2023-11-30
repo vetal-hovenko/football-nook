@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 import TeamSearchItem from "./TeamSearchItem";
 import { Container } from "../Ui/Container";
+import { TbSearch } from "react-icons/tb";
 
 import { fetchTeamsByName } from "@/api/fetchTeamsByName";
 
@@ -28,39 +29,38 @@ const TeamSearch = () => {
                 setNoClubs(false);
             }
         }, 500);
-        
+
         return () => clearTimeout(debounceTimeout);
     }, [query]);
 
-    const handleButtonClick = () => {
+    const handleListHide = () => {
         setShowList(!showList);
     };
 
     return (
         <Container>
-            <div className="relative">
+            <div className="relative flex items-center misted-glass rounded-md px-2">
+                <TbSearch size={30} />
                 <input
-                    className="w-full px-4 py-2 text-xl rounded-md bg-transparent border-2 border-gray-400 text-white"
+                    className="w-full px-4 py-2 text-xl bg-transparent"
                     type="text"
                     value={query}
                     onChange={(event) => setQuery(event.target.value)}
                 />
-
-                {query && noClubs && (
-                    <p className="text-gold-title p-2 text-sm md:text-base">
-                        Unfortunately, we do not have information about the
-                        desired club.
-                    </p>
+                {clubs.length > 0 && (
+                    <button
+                        className="text-gray-400 z-10 mr-3"
+                        onClick={handleListHide}
+                    >
+                        {showList ? "Hide" : "Show"}
+                    </button>
                 )}
             </div>
-
-            {clubs.length > 0 && (
-                <button
-                    className="absolute top-1 right-0 px-3 py-1 text-gray-400 z-10 mr-3"
-                    onClick={handleButtonClick}
-                >
-                    {showList ? "Hide" : "Show"}
-                </button>
+            {query && noClubs && (
+                <p className="text-gold-title p-2 text-sm md:text-base">
+                    Unfortunately, we do not have information about the desired
+                    club.
+                </p>
             )}
 
             {showList && clubs.length > 0 && (

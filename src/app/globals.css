@@ -103,18 +103,25 @@ input:focus {
 ::-webkit-scrollbar {
     width: 8px;
     color: rgba(215, 215, 215, 0.866);
-  }
+}
   
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.177); 
     border-radius: 5px;
-  }
+}
    
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: rgba(80, 106, 125, 0.434); 
     border-radius: 10px;
-  }
+}
   
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: rgba(51, 110, 150, 0.536);
-  }
+}
+
+.misted-glass {
+    color: rgba(255, 255, 255, 0.712);
+    background: rgba(255, 255, 255, 0.363);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.048);
+}

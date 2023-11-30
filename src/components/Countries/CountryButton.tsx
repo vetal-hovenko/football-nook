@@ -20,7 +20,7 @@ const CountryButton: React.FC<CountryButtonProps> = ({
 }) => {
     return (
         <button
-            className=" hover:bg-[#e1e2d339] bg-[#b1b1b175] cursor-pointer flex items-center justify-between w-full"
+            className=" hover:bg-[#e1e2d339]  cursor-pointer flex items-center justify-between w-full"
             onClick={() => toggleLeagues()}
         >
             <div className="flex items-center gap-2 p-2 w-max">
@@ -38,7 +38,7 @@ const CountryButton: React.FC<CountryButtonProps> = ({
                         />
                     )}
                 </div>
-                <p className="font-bold text-base md:text-xl text-gray-300 px-4 rounded-full">
+                <p className="font-bold text-base md:text-xl text-gray-900 px-4 rounded-full">
                     {name}
                 </p>
             </div>

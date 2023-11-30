@@ -27,7 +27,7 @@ const StandingsHeader: React.FC<StandingsHeaderProps> = ({ id }) => {
     }, [id]);
 
     return (
-        <aside className="mb-5 h-48 bg-fade-gray">
+        <aside className="mb-5 h-48 misted-glass">
             <Container>
                 <div className="flex flex-col-reverse h-48 items-center justify-center gap-4 px-8 py-2">
                     <h1 className="text-xl md:text-4xl text-white font-bold">

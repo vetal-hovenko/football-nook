@@ -20,10 +20,10 @@ export default async function Home() {
                     <TeamSearch />
                 </section>
 
-                <h2 className={subtitleStyles}>Countries List</h2>
+                <h2 className={subtitleStyles}>Countries</h2>
                 <section className="w-full md:w-5/6 mx-auto ">
                     <Container>
-                        <div className="bg-[#808080a2] p-2 rounded-md ">
+                        <div className="bg-[#80808041] p-2 rounded-md ">
                             <CountriesList countries={countries}/>
                         </div>
                     </Container>
