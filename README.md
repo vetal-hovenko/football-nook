@@ -1,10 +1,10 @@
 # Football Nook
 
-![Project Image](link_to_project_image.png) <!-- screenshot -->
+[![Football Nook](https://drive.google.com/uc?export=view&id=1bSGj8wIe2cuXMvustIUfYj0iIZF9-zpt)](https://football-nook.vercel.app/ "Click to visit Football Nook")
 
 ## Overview
 
-> This repository contains the codebase for a detailed football league information website built with Next.js. Users can view the league > table, top scorers, match details, match statistics and club information over multiple seasons.
+> This repository contains the codebase for a detailed football league information website built with Next.js. Users can view the league table, top scorers, match details, match statistics and club information over multiple seasons.
 
 ## Features
 
