@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { Container } from "@/components/Ui/Container";
 import NavBar from "@/components/Ui/NavBar/NavBar";
-import LastMatches from "@/components/LastMatches";
+import LastMatches from "@/components/ClubInfo/LastMatches";
 import GoBackButton from "@/components/Ui/GoBackButton";
 
 import { fetchClub } from "@/api/fetchClub";

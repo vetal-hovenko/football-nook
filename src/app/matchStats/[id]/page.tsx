@@ -3,7 +3,7 @@ import React from "react";
 import { Container } from "@/components/Ui/Container";
 import NavBar from "@/components/Ui/NavBar/NavBar";
 import StatsHeader from "@/components/MatchStatistics/StatsHeader";
-import LastMatches from "@/components/LastMatches";
+import LastMatches from "@/components/ClubInfo/LastMatches";
 import TeamInfo from "@/components/MatchStatistics/TeamInfo";
 import StatsList from "@/components/MatchStatistics/StatsList";
 import GoBackButton from "@/components/Ui/GoBackButton";
