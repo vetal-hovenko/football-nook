@@ -15,7 +15,7 @@ export default async function Home() {
             <HomePageHeader />
 
             <main className="countries pt-10">
-                <h2 className={subtitleStyles}>Search the team</h2>
+                <h2 className={subtitleStyles}>Find a team</h2>
                 <section className="rounded-md w-full md:w-5/6 mx-auto mb-16 h-16">
                     <TeamSearch />
                 </section>
