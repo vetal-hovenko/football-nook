@@ -121,7 +121,7 @@ input:focus {
 
 .misted-glass {
     color: rgba(255, 255, 255, 0.712);
-    background: rgba(255, 255, 255, 0.363);
+    background: rgba(255, 255, 255, 0.281);
     backdrop-filter: blur(10px);
     border-bottom: 2px solid rgba(255, 255, 255, 0.048);
 }

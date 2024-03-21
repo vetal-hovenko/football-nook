@@ -22,6 +22,8 @@ const MatchItem: React.FC<MatchItemProps> = ({
     const awayTeam = match.teams.away;
     const isPlayed = new Date(match.fixture.date) <= new Date();
 
+    console.log(match)
+
     return (
         <li
             className="fade-in mb-2 shadow-xl w-[320px] rounded-md"

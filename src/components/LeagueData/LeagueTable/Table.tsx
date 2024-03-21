@@ -10,7 +10,7 @@ type TableProps = { data: LeagueResponse };
 
 const Table: React.FC<TableProps> = ({ data }) => {
     return (
-        <article className="overflow-x-hidden min-h-screen bg-[#ffffff63] p-2">
+        <article className="overflow-x-hidden bg-[#ffffff63] p-2">
             {data ? (
                 <>
                     <UserHint />

@@ -9,6 +9,7 @@ export async function fetchLeagues(country: string) {
     try {
         const response = await fetch(url, options);
         const result = await response.json();
+        console.log({response})
 
         return result;
     } catch (error) {

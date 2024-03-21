@@ -13,11 +13,7 @@ export type Props = {
     leagues: LeagueData[];
 };
 
-const LeagueItem: React.FC<Props> = ({
-    name,
-    flag,
-    leagues,
-}) => {
+const LeagueItem: React.FC<Props> = ({ name, flag, leagues }) => {
     const [showLeagues, setShowLeagues] = useState<boolean>(false);
 
     const toggleLeagues = () => {
@@ -49,7 +45,10 @@ const LeagueItem: React.FC<Props> = ({
                 {showLeagues &&
                     leagues &&
                     leagues.map((league) => (
-                        <LeagueFromCountry key={league.league.name} league={league} />
+                        <LeagueFromCountry
+                            key={league.league.name}
+                            league={league}
+                        />
                     ))}
             </ul>
         </li>
